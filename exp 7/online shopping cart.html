@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #f2f6ff
+        }
+
+        button,
+        select {
+            padding: 10px;
+            margin: 8px
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Online Shopping Cart</h1>
+
+    <label>Select Product:</label>
+    <select id="product" title="Select Product">
+        <option value="Shirt">Shirt - ₹500</option>
+        <option value="Shoes">Shoes - ₹1200</option>
+        <option value="Bag">Bag - ₹800</option>
+    </select>
+
+    <button onclick="add()">Add to Cart</button>
+    <p id="result"></p>
+
+    <script>
+        let total = 0;
+
+        function add() {
+            let p = document.getElementById("product").value;
+            let prices = { Shirt: 500, Shoes: 1200, Bag: 800 };
+            total += prices[p];
+            document.getElementById("result").innerHTML =
+                "Added: " + p + "<br>Total: ₹" + total;
+        }
+    </script>
+
+</body>
+
+</html>

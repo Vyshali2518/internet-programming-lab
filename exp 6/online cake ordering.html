@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #fff2f5
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px;
+            margin: 8px
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Online Cake Ordering</h1>
+
+    <input id="name" placeholder="Customer Name"><br>
+
+    <label>Cake:</label>
+    <select id="cake" title="Cake Type">
+        <option>Chocolate Cake</option>
+        <option>Black Forest</option>
+        <option>Vanilla Cake</option>
+        <option>Red Velvet</option>
+    </select><br>
+
+    <label>Size:</label>
+    <select id="size" title="Cake Size">
+        <option>Half Kg</option>
+        <option>1 Kg</option>
+        <option>2 Kg</option>
+    </select><br>
+
+    <input id="address" placeholder="Delivery Address"><br>
+
+    <button onclick="orderCake()">Order Cake</button>
+    <p id="result"></p>
+
+    <script>
+        function orderCake() {
+            let n = document.getElementById("name").value.trim();
+            let c = document.getElementById("cake").value;
+            let s = document.getElementById("size").value;
+            let a = document.getElementById("address").value.trim();
+
+            if (n == "" || a == "") result.innerHTML = "Enter name and address";
+            else result.innerHTML = "Order placed for " + n + "<br>" + c + " - " + s + "<br>Deliver to: " + a;
+        }
+    </script>
+</body>
+
+</html>
