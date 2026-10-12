@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        h2 {
+            text-align: center;
+            color: navy;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Information Form</h2>
+
+<form action="/submit" method="POST">
+
+    Name:
+    <input type="text" name="name" required>
+    <br><br>
+
+    Register Number:
+    <input type="text" name="regno" required>
+    <br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    Department:
+    <select name="department">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="IT">IT</option>
+    </select>
+    <br><br>
+
+    Email:
+    <input type="email" name="email" required>
+    <br><br>
+
+    Hobbies:
+    <br>
+    <input type="checkbox" name="hobbies" value="Reading"> Reading
+    <input type="checkbox" name="hobbies" value="Sports"> Sports
+    <input type="checkbox" name="hobbies" value="Music"> Music
+    <input type="checkbox" name="hobbies" value="Drawing"> Drawing
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

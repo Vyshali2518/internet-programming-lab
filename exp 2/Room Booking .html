@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+            background: #f2f6ff;
+        }
+        h1 {
+            color: navy;
+        }
+        input, button, select {
+            padding: 10px;
+            margin: 8px;
+        }
+        button {
+            background: navy;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Hotel Room Booking</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <br>
+
+    <label>Select room type:</label>
+    <select id="room">
+        <option value="Single">Single Room</option>
+        <option value="Double">Double Room</option>
+        <option value="Deluxe">Deluxe Room</option>
+    </select>
+    <br>
+
+    <button onclick="bookRoom()">Book Room</button>
+
+    <p id="result"></p>
+
+    <script>
+        function bookRoom() {
+            let name = document.getElementById("name").value.trim();
+            let room = document.getElementById("room").value;
+            let result = document.getElementById("result");
+
+            if (name === "") {
+                result.innerHTML = "Please enter your name.";
+            } else {
+                result.innerHTML = "Room booked successfully for " +
+                    name + " (" + room + " Room).";
+            }
+        }
+    </script>
+
+</body>
+</html>

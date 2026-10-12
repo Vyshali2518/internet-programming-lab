@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Library</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 60px;
+            background: #f2f6ff;
+        }
+        h1 {
+            color: navy;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        button {
+            background: navy;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Library Management</h1>
+
+    <input type="text" id="book" placeholder="Enter book name">
+    <button onclick="searchBook()">Search Book</button>
+
+    <p id="result"></p>
+
+    <script>
+        function searchBook() {
+            let book = document.getElementById("book").value.toLowerCase().trim();
+            let result = document.getElementById("result");
+
+            if (book === "") {
+                result.innerHTML = "Please enter a book name.";
+            } 
+            else if (book === "java" || book === "python" || book === "html") {
+                result.innerHTML = "Book is available.";
+            } 
+            else {
+                result.innerHTML = "Book is not available.";
+            }
+        }
+    </script>
+
+</body>
+</html>
