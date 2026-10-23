@@ -3,47 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Online Bus Ticket Booking - website interface">
-  <title>Online Bus Ticket Booking</title>
+  <title>Experiment 3: Bus Booking</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/common.js" defer></script>
-  <script src="js/bus.js" defer></script>
 </head>
-<body data-page="bus">
-  <header class="site-header">
-    
-    <nav><a href="index.html">Home</a><a href="#catalog">Explore</a><a href="#demo-form">Demo form</a></nav>
-  </header>
+<body>
+  <header><a href="index.html">All experiments</a></header>
   <main>
-    <section class="hero experiment-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">WEBSITE PREVIEW</p>
-        <h1>Online Bus Ticket Booking</h1>
-        <p class="hero-subtitle">Choose a route and reserve a seat</p>
-        <p class="hero-description">Search sample buses, select a seat and calculate your ticket total.</p>
-        <div class="hero-actions"><a class="button button-light" href="#catalog">Explore options <span>↓</span></a><a class="text-link" href="index.html">Back to websites</a></div>
-      </div>
-      <div class="hero-art hero-art-clean" aria-hidden="true"><div class="art-panel"><span class="art-panel-line"></span><span class="art-panel-line short"></span><span class="art-panel-line"></span><span class="art-panel-button"></span></div></div>
-    </section>
-    <section class="section-head" id="catalog"><div><p class="eyebrow">DISCOVER</p><h2 id="catalog-title">Explore options</h2><p>Use search and filters to find a matching option.</p></div><div class="result-count" id="result-count">Loading options…</div></section>
-    <section class="toolbar">
-      <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Search by name, location or detail…" aria-label="Search options"></label>
-      <label class="filter-label">Category <select id="category-filter"><option value="all">All categories</option></select></label>
-      <label class="filter-label" id="extra-filter-wrap">Sort <select id="sort-filter"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name A–Z</option></select></label>
-    </section>
-    <section id="catalog-grid" class="catalog-grid" aria-live="polite"></section>
-    <section class="workbench">
-      <div class="workbench-copy"><p class="eyebrow">TRY IT YOURSELF</p><h2 id="form-heading">Make a demo request</h2><p id="form-description">Fill in the details below. JavaScript checks the form before showing a confirmation.</p><ul class="check-list"><li>✓ Required-field validation</li><li>✓ Instant total calculation where relevant</li><li>✓ No backend or real payment</li></ul></div>
-      <form id="demo-form" class="demo-form" novalidate>
-        <div id="form-fields" class="form-fields"></div>
-        <div class="form-total" id="form-total" hidden><span>Estimated total</span><strong id="total-value">₹0</strong></div>
-        <button class="button button-primary" type="submit" id="submit-button">Submit demo request <span>→</span></button>
-        <p class="form-hint">Demo only — no data is sent to a server.</p>
-        <div id="form-message" class="form-message" role="status" aria-live="polite" hidden></div>
-      </form>
-    </section>
-    
+    <h1>Online Bus Ticket Booking</h1>
+    <p>Select a route and book a sample bus ticket.</p>
+    <h2>Popular routes</h2>
+    <ul><li>Chennai to Bengaluru</li><li>Chennai to Madurai</li><li>Coimbatore to Chennai</li></ul>
+    <h2>Book a ticket</h2>
+    <form data-message="Your demo bus ticket has been booked.">
+      <label>Passenger name <input name="name" required></label>
+      <label>Route
+        <select name="route" required>
+          <option value="">Select a route</option><option>Chennai to Bengaluru</option>
+          <option>Chennai to Madurai</option><option>Coimbatore to Chennai</option>
+        </select>
+      </label>
+      <label>Travel date <input name="date" type="date" required></label>
+      <button type="submit">Book ticket</button>
+      <p class="message" aria-live="polite"></p>
+    </form>
   </main>
-  <footer class="site-footer"><span>Built with HTML, CSS and JavaScript only.</span><a href="index.html">← Return to home</a></footer>
 </body>
 </html>
