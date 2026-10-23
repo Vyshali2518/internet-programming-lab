@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            background-color: #eaf4ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #234e70;
+        }
+
+        h2 {
+            color: #174a80;
+        }
+
+        form {
+            background: white;
+            width: 350px;
+            max-width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #b3d9ff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #c5d9ed;
+            text-align: left;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 9px;
+            margin-top: 5px;
+            border: 1px solid #8abce8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #3478c7;
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            margin: 5px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #174a80;
+        }
+
+        video, #photo {
+            display: block;
+            margin: 10px auto;
+            border: 3px solid #8abce8;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        #result {
+            background: white;
+            color: #234e70;
+            padding: 15px;
+            margin: 20px auto;
+            width: 350px;
+            max-width: 85%;
+            border-radius: 10px;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
+            text-align: left;
+        }
+
+        /* Popup background */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Popup box */
+        .modal-content {
+            background: white;
+            width: 300px;
+            max-width: 85%;
+            padding: 30px 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px #555;
+            animation: appear 0.3s ease;
+        }
+
+        .checkmark {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #d9fbe5;
+            color: #159447;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .modal-content h3 {
+            color: #159447;
+            margin-bottom: 10px;
+        }
+
+        .modal-content p {
+            color: #555;
+        }
+
+        .ok-button {
+            background: #159447;
+            padding: 10px 30px;
+            margin-top: 10px;
+        }
+
+        .ok-button:hover {
+            background: #107437;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration</h2>
+
+<form id="form">
+
+    Name:
+    <input type="text" id="name" required>
+    <br><br>
+
+    Register Number:
+    <input type="text" id="regno" required>
+    <br><br>
+
+    Email:
+    <input type="email" id="email" required>
+    <br><br>
+
+    Phone Number:
+    <input type="tel" id="phone"
+           pattern="[0-9]{10}"
+           maxlength="10" required>
+    <br><br>
+
+    Department:
+    <select id="dept">
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>IT</option>
+        <option>EEE</option>
+    </select>
+
+    <br><br>
+
+    <video id="video" width="250"
+           autoplay playsinline
+           style="display:none"></video>
+
+    <button type="button" onclick="startCamera()">
+        Open Camera
+    </button>
+
+    <button type="button" onclick="capture()">
+        Capture Photo
+    </button>
+
+    <button type="button" onclick="retake()">
+        Retake
+    </button>
+
+    <canvas id="canvas" width="250" height="200"
+            style="display:none"></canvas>
+
+    <img id="photo" width="250"
+         style="display:none" alt="Student photo">
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<div id="result" style="display:none"></div>
+
+<!-- Success Popup -->
+<div id="successModal" class="modal" role="dialog"
+     aria-modal="true" aria-labelledby="successTitle">
+
+    <div class="modal-content">
+
+        <div class="checkmark">&#10003;</div>
+
+        <h3 id="successTitle">Registration Successful!</h3>
+
+        <p>Your student details have been submitted successfully.</p>
+
+        <button type="button" class="ok-button"
+                onclick="closePopup()">
+            OK
+        </button>
+
+    </div>
+</div>
+
+<script>
+    let stream = null;
+    let capturedPhoto = "";
+
+    const video = document.getElementById("video");
+    const canvas = document.getElementById("canvas");
+    const photo = document.getElementById("photo");
+
+    async function startCamera() {
+        try {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+
+            stream = await navigator.mediaDevices.getUserMedia({
+                video: true
+            });
+
+            video.srcObject = stream;
+            video.style.display = "block";
+
+        } catch (error) {
+            alert("Please allow camera access.");
+        }
+    }
+
+    function capture() {
+        if (!stream) {
+            alert("Open the camera first.");
+            return;
+        }
+
+        canvas.getContext("2d").drawImage(
+            video, 0, 0, 250, 200
+        );
+
+        capturedPhoto = canvas.toDataURL("image/png");
+
+        photo.src = capturedPhoto;
+        photo.style.display = "block";
+
+        stream.getTracks().forEach(track => track.stop());
+        stream = null;
+
+        video.srcObject = null;
+        video.style.display = "none";
+    }
+
+    function retake() {
+        capturedPhoto = "";
+        photo.src = "";
+        photo.style.display = "none";
+
+        startCamera();
+    }
+
+    document.getElementById("form").onsubmit = function(e) {
+        e.preventDefault();
+
+        if (!capturedPhoto) {
+            alert("Please capture your photo first.");
+            return;
+        }
+
+        const result = document.getElementById("result");
+
+        result.style.display = "block";
+
+        result.innerHTML =
+            "<h3>Student Details</h3>" +
+            "<b>Name:</b> " +
+            document.getElementById("name").value +
+            "<br><br><b>Register Number:</b> " +
+            document.getElementById("regno").value +
+            "<br><br><b>Email:</b> " +
+            document.getElementById("email").value +
+            "<br><br><b>Phone Number:</b> " +
+            document.getElementById("phone").value +
+            "<br><br><b>Department:</b> " +
+            document.getElementById("dept").value +
+            "<br><br><b>Photo:</b>";
+
+        result.appendChild(photo);
+        photo.style.display = "block";
+
+        // Show success popup
+        document.getElementById("successModal").style.display = "flex";
+    };
+
+    function closePopup() {
+        document.getElementById("successModal").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
