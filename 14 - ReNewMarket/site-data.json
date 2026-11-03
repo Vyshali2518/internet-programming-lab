@@ -1,0 +1,27 @@
+{
+  "name": "ReNewMarket",
+  "category": "Pre-owned marketplace",
+  "description": "Create second-hand listings, search categories, manage listings and update order delivery status.",
+  "records": [
+    {
+      "title": "Study Desk",
+      "description": "Solid wood · Good condition",
+      "price": "₹2,800"
+    },
+    {
+      "title": "Wireless Headphones",
+      "description": "Bluetooth · Lightly used",
+      "price": "₹1,200"
+    },
+    {
+      "title": "Mountain Bicycle",
+      "description": "21-speed · Serviced",
+      "price": "₹4,500"
+    },
+    {
+      "title": "Coffee Table",
+      "description": "Oak finish · Pre-owned",
+      "price": "₹1,750"
+    }
+  ]
+}

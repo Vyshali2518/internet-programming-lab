@@ -1,0 +1,27 @@
+{
+  "name": "BlossomGifts",
+  "category": "Flowers and gifts",
+  "description": "Browse gifts and flowers, search/filter products, manage cart and place scheduled delivery orders.",
+  "records": [
+    {
+      "title": "Rose Garden",
+      "description": "12 red roses · Gift wrap",
+      "price": "₹899"
+    },
+    {
+      "title": "Sunshine Basket",
+      "description": "Seasonal flowers · Basket",
+      "price": "₹1,250"
+    },
+    {
+      "title": "Tulip Elegance",
+      "description": "10 tulips · Glass vase",
+      "price": "₹1,499"
+    },
+    {
+      "title": "Lavender Wishes",
+      "description": "Lavender bouquet · Note card",
+      "price": "₹1,099"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Wanderlust Travels",
+  "category": "Travel planning",
+  "description": "Explore destinations, food/hotel/routes, book accommodation and manage travel details.",
+  "records": [
+    {
+      "title": "Munnar Escape",
+      "description": "3 days · Hills and tea gardens",
+      "price": "From ₹5,900"
+    },
+    {
+      "title": "Pondicherry Weekend",
+      "description": "2 days · Heritage and beaches",
+      "price": "From ₹4,200"
+    },
+    {
+      "title": "Ooty Retreat",
+      "description": "3 days · Scenic rail and gardens",
+      "price": "From ₹6,500"
+    },
+    {
+      "title": "Hampi Heritage",
+      "description": "4 days · Historic sites",
+      "price": "From ₹8,900"
+    }
+  ]
+}

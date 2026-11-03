@@ -1,0 +1,27 @@
+{
+  "name": "BloodConnect Donor Portal",
+  "category": "Blood donor network",
+  "description": "Donor registration, search donors by blood group/location and hospital blood-bank updates.",
+  "records": [
+    {
+      "title": "A Positive",
+      "description": "Donor available · Chennai",
+      "price": "12 donors"
+    },
+    {
+      "title": "O Positive",
+      "description": "Donor available · Chennai",
+      "price": "18 donors"
+    },
+    {
+      "title": "B Positive",
+      "description": "Donor available · Chennai",
+      "price": "9 donors"
+    },
+    {
+      "title": "O Negative",
+      "description": "Urgent requests · Chennai",
+      "price": "4 donors"
+    }
+  ]
+}

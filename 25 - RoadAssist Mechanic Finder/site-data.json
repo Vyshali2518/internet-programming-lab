@@ -1,0 +1,27 @@
+{
+  "name": "RoadAssist Mechanic Finder",
+  "category": "Roadside assistance",
+  "description": "Search mechanics by location, mechanic registration/business listing, admin approval and feedback.",
+  "records": [
+    {
+      "title": "City Auto Care",
+      "description": "Anna Nagar · Car and bike",
+      "price": "4.8 / 5"
+    },
+    {
+      "title": "QuickFix Garage",
+      "description": "Velachery · Car repair",
+      "price": "4.7 / 5"
+    },
+    {
+      "title": "Highway Motors",
+      "description": "Tambaram · 24-hour support",
+      "price": "4.6 / 5"
+    },
+    {
+      "title": "RoadMate Service",
+      "description": "Adyar · Battery and tyres",
+      "price": "4.9 / 5"
+    }
+  ]
+}

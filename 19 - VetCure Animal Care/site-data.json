@@ -1,0 +1,27 @@
+{
+  "name": "VetCure Animal Care",
+  "category": "Animal care",
+  "description": "Farmers submit animal symptoms, doctors review complaints and provide solutions, news and feedback.",
+  "records": [
+    {
+      "title": "Pet health consultation",
+      "description": "Video / image / text review",
+      "price": "₹250"
+    },
+    {
+      "title": "Vaccination guidance",
+      "description": "Schedule and care advice",
+      "price": "₹150"
+    },
+    {
+      "title": "Animal nutrition",
+      "description": "Feeding and diet guidance",
+      "price": "₹200"
+    },
+    {
+      "title": "Emergency guidance",
+      "description": "Initial remote assessment",
+      "price": "₹300"
+    }
+  ]
+}

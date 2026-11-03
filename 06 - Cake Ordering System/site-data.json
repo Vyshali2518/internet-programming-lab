@@ -1,0 +1,27 @@
+{
+  "name": "Cake Ordering System",
+  "category": "Custom cakes",
+  "description": "Browse cakes, filter categories, customize cake message, add to cart and track orders.",
+  "records": [
+    {
+      "title": "Chocolate Truffle",
+      "description": "Rich dark chocolate · 1 kg",
+      "price": "₹850"
+    },
+    {
+      "title": "Red Velvet",
+      "description": "Cream cheese frosting · 1 kg",
+      "price": "₹950"
+    },
+    {
+      "title": "Vanilla Berry",
+      "description": "Fresh berries · 1 kg",
+      "price": "₹780"
+    },
+    {
+      "title": "Black Forest",
+      "description": "Chocolate and cherry · 1 kg",
+      "price": "₹820"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "TechSavvy Gadget Store",
+  "category": "Technology store",
+  "description": "Browse categorized gadgets, search, cart quantity changes, checkout and order history.",
+  "records": [
+    {
+      "title": "Nova Smartphone",
+      "description": "128 GB · 8 GB RAM",
+      "price": "₹24,999"
+    },
+    {
+      "title": "AeroBook Laptop",
+      "description": "16 GB RAM · 512 GB SSD",
+      "price": "₹58,990"
+    },
+    {
+      "title": "SoundPods Pro",
+      "description": "Wireless · Noise reduction",
+      "price": "₹3,499"
+    },
+    {
+      "title": "ViewTab 11",
+      "description": "11-inch display · 128 GB",
+      "price": "₹18,499"
+    }
+  ]
+}

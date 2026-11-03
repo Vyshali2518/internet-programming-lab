@@ -1,0 +1,3 @@
+Implementation technique: TypeScript
+
+The page uses TypeScript in its interface. The browser-ready code is in script.js. A TypeScript source example is included separately where applicable.

@@ -1,0 +1,27 @@
+{
+  "name": "Hotel Room Booking",
+  "category": "Stay reservations",
+  "description": "Search room types, check availability, book rooms, view booking history and admin room pricing.",
+  "records": [
+    {
+      "title": "Standard Room",
+      "description": "Queen bed · Wi-Fi · Breakfast",
+      "price": "₹2,400 / night"
+    },
+    {
+      "title": "Deluxe Room",
+      "description": "King bed · City view",
+      "price": "₹3,600 / night"
+    },
+    {
+      "title": "Family Suite",
+      "description": "Two bedrooms · Lounge",
+      "price": "₹5,200 / night"
+    },
+    {
+      "title": "Executive Suite",
+      "description": "Work desk · Lounge access",
+      "price": "₹6,800 / night"
+    }
+  ]
+}

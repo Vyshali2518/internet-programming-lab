@@ -1,0 +1,27 @@
+{
+  "name": "Train Reservation System",
+  "category": "Rail reservations",
+  "description": "Search trains, choose class and seats, book tickets, generate PNR, check status and cancel tickets.",
+  "records": [
+    {
+      "title": "Chennai Express",
+      "description": "Chennai → Bengaluru · 06:15",
+      "price": "₹480"
+    },
+    {
+      "title": "Kaveri Express",
+      "description": "Chennai → Mysuru · 21:15",
+      "price": "₹620"
+    },
+    {
+      "title": "Pandian Express",
+      "description": "Chennai → Madurai · 21:40",
+      "price": "₹410"
+    },
+    {
+      "title": "Cheran Express",
+      "description": "Chennai → Coimbatore · 22:10",
+      "price": "₹530"
+    }
+  ]
+}

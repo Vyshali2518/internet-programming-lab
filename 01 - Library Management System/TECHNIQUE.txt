@@ -1,0 +1,3 @@
+Implementation technique: Radio buttons and HTML forms
+
+The page uses Radio buttons and HTML forms in its interface. The browser-ready code is in script.js. A TypeScript source example is included separately where applicable.

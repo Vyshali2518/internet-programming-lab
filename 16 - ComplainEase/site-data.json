@@ -1,0 +1,27 @@
+{
+  "name": "ComplainEase",
+  "category": "Public services",
+  "description": "Register complaints, assign category and location, track status, officer updates and feedback.",
+  "records": [
+    {
+      "title": "Road damage",
+      "description": "Pothole or damaged road surface",
+      "price": "Open"
+    },
+    {
+      "title": "Street lighting",
+      "description": "Faulty or missing street light",
+      "price": "Open"
+    },
+    {
+      "title": "Waste collection",
+      "description": "Missed waste pickup",
+      "price": "Open"
+    },
+    {
+      "title": "Water supply",
+      "description": "Leakage or interruption",
+      "price": "Open"
+    }
+  ]
+}

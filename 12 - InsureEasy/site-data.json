@@ -1,0 +1,27 @@
+{
+  "name": "InsureEasy",
+  "category": "Insurance services",
+  "description": "Register agents/customers, manage policies, update policy details and load policy data asynchronously.",
+  "records": [
+    {
+      "title": "Health Secure",
+      "description": "Hospitalisation cover · ₹5 lakh",
+      "price": "From ₹6,200/year"
+    },
+    {
+      "title": "Motor Protect",
+      "description": "Own damage + third party",
+      "price": "From ₹3,800/year"
+    },
+    {
+      "title": "Home Shield",
+      "description": "Building and contents cover",
+      "price": "From ₹2,100/year"
+    },
+    {
+      "title": "Family Plus",
+      "description": "Family floater · ₹10 lakh",
+      "price": "From ₹9,400/year"
+    }
+  ]
+}

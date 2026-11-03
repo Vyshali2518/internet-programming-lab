@@ -1,0 +1,27 @@
+{
+  "name": "EasyToll",
+  "category": "Toll services",
+  "description": "Manage toll wallet, buy e-tickets, apply for passes, renew passes and generate a QR-style pass code.",
+  "records": [
+    {
+      "title": "City Toll Pass",
+      "description": "Valid for 30 days",
+      "price": "₹1,200"
+    },
+    {
+      "title": "Frequent Traveller",
+      "description": "Valid for 90 days",
+      "price": "₹3,000"
+    },
+    {
+      "title": "Single Journey",
+      "description": "One-way toll ticket",
+      "price": "₹150"
+    },
+    {
+      "title": "Return Journey",
+      "description": "Two-way toll ticket",
+      "price": "₹280"
+    }
+  ]
+}

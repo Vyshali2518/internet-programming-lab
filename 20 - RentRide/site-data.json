@@ -1,0 +1,27 @@
+{
+  "name": "RentRide",
+  "category": "Vehicle rentals",
+  "description": "Search vehicles, filter by type, book rental dates, view booking status and manage vehicles.",
+  "records": [
+    {
+      "title": "Swift Hatchback",
+      "description": "5 seats · Manual",
+      "price": "₹1,500 / day"
+    },
+    {
+      "title": "Urban Sedan",
+      "description": "5 seats · Automatic",
+      "price": "₹2,200 / day"
+    },
+    {
+      "title": "Trail SUV",
+      "description": "7 seats · Automatic",
+      "price": "₹3,400 / day"
+    },
+    {
+      "title": "Cargo Van",
+      "description": "2 seats · Large storage",
+      "price": "₹2,800 / day"
+    }
+  ]
+}

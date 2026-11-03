@@ -1,0 +1,27 @@
+{
+  "name": "AgriMart",
+  "category": "Farm supplies",
+  "description": "Farmer registration, product listings, search, cart, wallet, orders and shipping status.",
+  "records": [
+    {
+      "title": "Hybrid Maize Seeds",
+      "description": "High-yield · 1 kg",
+      "price": "₹420"
+    },
+    {
+      "title": "Organic Compost",
+      "description": "Soil conditioner · 5 kg",
+      "price": "₹260"
+    },
+    {
+      "title": "Drip Irrigation Kit",
+      "description": "Water-saving · 20 m",
+      "price": "₹1,450"
+    },
+    {
+      "title": "Hand Sprayer",
+      "description": "Manual · 2 litre",
+      "price": "₹380"
+    }
+  ]
+}

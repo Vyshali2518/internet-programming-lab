@@ -1,0 +1,27 @@
+{
+  "name": "Flight Reservation System",
+  "category": "Flight bookings",
+  "description": "Search flights, book tickets, view itinerary, cancel tickets, print ticket and submit feedback.",
+  "records": [
+    {
+      "title": "Chennai to Delhi",
+      "description": "Non-stop · Economy",
+      "price": "₹6,450"
+    },
+    {
+      "title": "Chennai to Mumbai",
+      "description": "Non-stop · Economy",
+      "price": "₹4,850"
+    },
+    {
+      "title": "Chennai to Hyderabad",
+      "description": "1h 15m · Economy",
+      "price": "₹3,250"
+    },
+    {
+      "title": "Chennai to Kochi",
+      "description": "1h 10m · Economy",
+      "price": "₹2,950"
+    }
+  ]
+}

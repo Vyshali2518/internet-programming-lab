@@ -1,0 +1,27 @@
+{
+  "name": "MedCare Hospital Appointment",
+  "category": "Patient care",
+  "description": "Search doctors by specialty, validate patient details, book/cancel appointments and view history.",
+  "records": [
+    {
+      "title": "Dr. Meera Rao",
+      "description": "Cardiology · 12 years experience",
+      "price": "Available today"
+    },
+    {
+      "title": "Dr. Arjun Kumar",
+      "description": "Dermatology · 9 years experience",
+      "price": "Available today"
+    },
+    {
+      "title": "Dr. Nisha Iyer",
+      "description": "Pediatrics · 15 years experience",
+      "price": "Tomorrow"
+    },
+    {
+      "title": "Dr. Rahul Dev",
+      "description": "Orthopedics · 11 years experience",
+      "price": "Tomorrow"
+    }
+  ]
+}

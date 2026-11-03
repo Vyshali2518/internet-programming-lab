@@ -1,0 +1,27 @@
+{
+  "name": "CleanCity Waste Management",
+  "category": "City services",
+  "description": "Public complaints, driver route/work updates, bin management and dashboard reports.",
+  "records": [
+    {
+      "title": "Bin 104 · Anna Nagar",
+      "description": "Organic waste · 72% full",
+      "price": "Collection due"
+    },
+    {
+      "title": "Bin 208 · T. Nagar",
+      "description": "Mixed waste · 38% full",
+      "price": "On schedule"
+    },
+    {
+      "title": "Bin 315 · Velachery",
+      "description": "Recyclables · 91% full",
+      "price": "Priority"
+    },
+    {
+      "title": "Bin 422 · Adyar",
+      "description": "Organic waste · 54% full",
+      "price": "On schedule"
+    }
+  ]
+}

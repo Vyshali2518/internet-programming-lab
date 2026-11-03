@@ -1,0 +1,3 @@
+Implementation technique: CSS Animation
+
+The page uses CSS Animation in its interface. The browser-ready code is in script.js. A TypeScript source example is included separately where applicable.

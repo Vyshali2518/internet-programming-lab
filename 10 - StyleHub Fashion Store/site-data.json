@@ -1,0 +1,27 @@
+{
+  "name": "StyleHub Fashion Store",
+  "category": "Fashion store",
+  "description": "Browse fashion categories, search/filter, add/remove cart items and update product cards dynamically.",
+  "records": [
+    {
+      "title": "Everyday Shirt",
+      "description": "Cotton · S / M / L / XL",
+      "price": "₹899"
+    },
+    {
+      "title": "Classic Sneakers",
+      "description": "White · Sizes 6–10",
+      "price": "₹1,799"
+    },
+    {
+      "title": "Linen Dress",
+      "description": "Sand · XS / S / M / L",
+      "price": "₹1,499"
+    },
+    {
+      "title": "Leather Tote",
+      "description": "Brown · One size",
+      "price": "₹1,299"
+    }
+  ]
+}

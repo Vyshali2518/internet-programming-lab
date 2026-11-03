@@ -1,0 +1,27 @@
+{
+  "name": "VoteOnline",
+  "category": "Election portal",
+  "description": "Voter login, OTP-style verification, candidate selection, one-vote submission and election results.",
+  "records": [
+    {
+      "title": "A. Kumar",
+      "description": "Candidate · Development",
+      "price": "Candidate 01"
+    },
+    {
+      "title": "S. Priya",
+      "description": "Candidate · Design",
+      "price": "Candidate 02"
+    },
+    {
+      "title": "R. Karthik",
+      "description": "Candidate · Research",
+      "price": "Candidate 03"
+    },
+    {
+      "title": "M. Ananya",
+      "description": "Candidate · Community",
+      "price": "Candidate 04"
+    }
+  ]
+}

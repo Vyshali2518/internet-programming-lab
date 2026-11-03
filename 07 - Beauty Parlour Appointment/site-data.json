@@ -1,0 +1,27 @@
+{
+  "name": "Beauty Parlour Appointment",
+  "category": "Salon appointments",
+  "description": "Browse services and stylists, choose appointment slot, manage bookings and submit feedback.",
+  "records": [
+    {
+      "title": "Hair Styling",
+      "description": "Wash, cut and finish",
+      "price": "₹650"
+    },
+    {
+      "title": "Facial",
+      "description": "Classic skin care · 45 min",
+      "price": "₹900"
+    },
+    {
+      "title": "Manicure",
+      "description": "Nail care · 30 min",
+      "price": "₹450"
+    },
+    {
+      "title": "Bridal Makeup",
+      "description": "Consultation included",
+      "price": "₹5,500"
+    }
+  ]
+}

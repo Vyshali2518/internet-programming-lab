@@ -1,0 +1,27 @@
+{
+  "name": "Home Finder",
+  "category": "Property search",
+  "description": "Search properties by location, budget and type, save favorites and schedule property visits.",
+  "records": [
+    {
+      "title": "Lakeview Apartment",
+      "description": "Adyar · 2 BHK · 1,150 sq.ft.",
+      "price": "₹78 lakh"
+    },
+    {
+      "title": "Garden Villa",
+      "description": "OMR · 3 BHK · 1,850 sq.ft.",
+      "price": "₹1.25 crore"
+    },
+    {
+      "title": "City Studio",
+      "description": "Velachery · 1 BHK · 650 sq.ft.",
+      "price": "₹42 lakh"
+    },
+    {
+      "title": "Green Acres Plot",
+      "description": "Tambaram · 1,200 sq.ft.",
+      "price": "₹36 lakh"
+    }
+  ]
+}

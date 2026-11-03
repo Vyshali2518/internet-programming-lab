@@ -1,0 +1,27 @@
+{
+  "name": "Library Management System",
+  "category": "Library services",
+  "description": "Search books, register/login, borrow/return tracking, fines, study materials and librarian book management.",
+  "records": [
+    {
+      "title": "The Alchemist",
+      "description": "Paulo Coelho · Fiction",
+      "price": "₹320"
+    },
+    {
+      "title": "Wings of Fire",
+      "description": "A.P.J. Abdul Kalam · Biography",
+      "price": "₹280"
+    },
+    {
+      "title": "Clean Code",
+      "description": "Robert C. Martin · Technology",
+      "price": "₹650"
+    },
+    {
+      "title": "Atomic Habits",
+      "description": "James Clear · Self-help",
+      "price": "₹420"
+    }
+  ]
+}

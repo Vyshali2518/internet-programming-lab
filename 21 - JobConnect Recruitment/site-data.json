@@ -1,0 +1,27 @@
+{
+  "name": "JobConnect Recruitment",
+  "category": "Career opportunities",
+  "description": "Search/filter vacancies, director posts jobs, applicants apply and admin views reports.",
+  "records": [
+    {
+      "title": "Frontend Developer",
+      "description": "Chennai · Full time",
+      "price": "₹4–6 LPA"
+    },
+    {
+      "title": "Junior Data Analyst",
+      "description": "Hybrid · Full time",
+      "price": "₹3–5 LPA"
+    },
+    {
+      "title": "UI Designer",
+      "description": "Remote · Internship",
+      "price": "₹12,000 / month"
+    },
+    {
+      "title": "Python Developer",
+      "description": "Bengaluru · Full time",
+      "price": "₹5–7 LPA"
+    }
+  ]
+}

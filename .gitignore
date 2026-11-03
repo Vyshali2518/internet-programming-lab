@@ -1,0 +1,14 @@
+# Python environments and generated files
+IP/.venv/
+__pycache__/
+*.py[cod]
+
+# Local databases may contain submitted student data
+*.db
+*.sqlite
+*.sqlite3
+
+# Local environment variables
+.env
+.env.*
+!.env.example

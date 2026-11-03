@@ -1,0 +1,27 @@
+{
+  "name": "Bus Ticket Booking",
+  "category": "Bus travel",
+  "description": "Search buses, select seats, enter passenger details, book tickets, cancel tickets and view reports.",
+  "records": [
+    {
+      "title": "Chennai → Bengaluru",
+      "description": "06:30 AM · AC Sleeper",
+      "price": "₹650"
+    },
+    {
+      "title": "Chennai → Coimbatore",
+      "description": "08:15 AM · Volvo",
+      "price": "₹520"
+    },
+    {
+      "title": "Chennai → Madurai",
+      "description": "09:00 PM · Sleeper",
+      "price": "₹480"
+    },
+    {
+      "title": "Chennai → Trichy",
+      "description": "07:45 AM · AC Seater",
+      "price": "₹390"
+    }
+  ]
+}
