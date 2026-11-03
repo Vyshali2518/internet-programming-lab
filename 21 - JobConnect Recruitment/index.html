@@ -1,1 +1,245 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Search/filter vacancies, director posts jobs, applicants apply and admin views reports."><title>JobConnect Recruitment</title><link rel="stylesheet" href="style.css"></head><body class="listing-layout"><header class="site-header"><div class="header-inner"><a class="brand" href="#home"><span class="brand-mark">J</span>JobConnect Recruitment</a><nav aria-label="Main navigation"><a href="#home">Home</a><a href="#explore">Explore</a><a href="#activity">My activity</a><a href="#contact">Contact</a></nav><a class="header-action" href="#request">Get started</a></div></header><main><section class="hero" id="home"><div><div class="eyebrow">Career opportunities</div><h1>JobConnect Recruitment</h1><p>Search/filter vacancies, director posts jobs, applicants apply and admin views reports.</p><div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:19px"><a class="button" href="#explore">Explore now</a><a class="button ghost" href="#request">Make a request</a></div></div><div class="hero-mark" aria-hidden="true">↗</div></section><div class="stats"><div class="stat"><strong>86</strong><span>Open vacancies</span></div><div class="stat"><strong>24</strong><span>Companies</span></div><div class="stat"><strong>Daily</strong><span>New opportunities</span></div></div><section id="explore"><div class="section-head"><div><h2>Explore</h2><p>Browse the available options and choose what you need.</p></div></div><div class="search-row"><input id="searchInput" type="search" placeholder="Search by name or details..." aria-label="Search"><button type="button" class="ghost" id="clearSearch">Clear</button></div><div style="height:14px"></div><div class="grid" id="recordGrid"><article class="card record" data-search="Frontend Developer Chennai · Full time"><div class="visual">01</div><div><span class="badge">Career opportunities</span><h3 style="margin-top:8px">Frontend Developer</h3><p>Chennai · Full time</p></div><div class="bottom"><span class="price">₹4–6 LPA</span><button type="button" class="select-item" data-item="Frontend Developer">Select</button></div></article><article class="card record" data-search="Junior Data Analyst Hybrid · Full time"><div class="visual">02</div><div><span class="badge">Career opportunities</span><h3 style="margin-top:8px">Junior Data Analyst</h3><p>Hybrid · Full time</p></div><div class="bottom"><span class="price">₹3–5 LPA</span><button type="button" class="select-item" data-item="Junior Data Analyst">Select</button></div></article><article class="card record" data-search="UI Designer Remote · Internship"><div class="visual">03</div><div><span class="badge">Career opportunities</span><h3 style="margin-top:8px">UI Designer</h3><p>Remote · Internship</p></div><div class="bottom"><span class="price">₹12,000 / month</span><button type="button" class="select-item" data-item="UI Designer">Select</button></div></article><article class="card record" data-search="Python Developer Bengaluru · Full time"><div class="visual">04</div><div><span class="badge">Career opportunities</span><h3 style="margin-top:8px">Python Developer</h3><p>Bengaluru · Full time</p></div><div class="bottom"><span class="price">₹5–7 LPA</span><button type="button" class="select-item" data-item="Python Developer">Select</button></div></article></div></section><div class="two-col" style="margin-top:22px"><section class="panel" id="request"><div class="eyebrow">Get started</div><h2>Apply for a vacancy</h2><p class="muted">Complete the details below. Required fields are checked before submission.</p><form id="mainForm"><div class="form-grid"><div class=""><label for="field0">Applicant name</label><input id="field0" name="field0" type="text" placeholder="Enter applicant name" required></div><div class=""><label for="field1">Email address</label><input id="field1" name="field1" type="email" placeholder="name@example.com" required></div><div class=""><label for="field2">Vacancy</label><select id="field2" name="field2" required><option value="">Choose vacancy</option><option>Frontend Developer</option><option>Junior Data Analyst</option><option>UI Designer</option><option>Python Developer</option></select></div><div class=""><label for="field3">Resume link</label><input id="field3" name="field3" type="text" placeholder="Enter resume link" required></div></div><button type="submit">Submit</button><p id="formMessage" aria-live="polite"></p></form></section><aside class="panel"><div class="eyebrow">Helpful information</div><h2>How it works</h2><ol class="muted"><li>Browse the available options.</li><li>Select the item or service you need.</li><li>Complete the form and submit.</li><li>Review your recent activity.</li></ol><div class="notice">Your information is saved in this browser.</div></aside></div><section class="panel" id="activity"><div class="section-head" style="margin-top:0"><div><h2>Recent activity</h2><p>Your recent submissions on this device.</p></div><button type="button" class="ghost" id="clearRecords">Clear history</button></div><div class="table-wrap"><table><thead><tr><th>Reference</th><th>Details</th><th>Date</th><th>Status</th></tr></thead><tbody id="activityRows"><tr><td colspan="4" class="muted">No activity yet.</td></tr></tbody></table></div></section><section id="contact" class="panel" style="margin-top:18px"><div class="eyebrow">Need assistance?</div><h2>Contact and support</h2><p class="muted">For questions or assistance, use the request form above.</p></section></main><footer><div class="footer-inner"><span>© 2026 JobConnect Recruitment</span><span>Designed for clear, simple service.</span></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Search/filter vacancies, director posts jobs, applicants apply and admin views reports."
+        />
+        <title>JobConnect Recruitment</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="listing-layout">
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="#home"
+                    ><span class="brand-mark">J</span>JobConnect Recruitment</a
+                >
+                <nav aria-label="Main navigation">
+                    <a href="#home">Home</a><a href="#explore">Explore</a
+                    ><a href="#activity">My activity</a><a href="#contact">Contact</a>
+                </nav>
+                <a class="header-action" href="#request">Get started</a>
+            </div>
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <div>
+                    <div class="eyebrow">Career opportunities</div>
+                    <h1>JobConnect Recruitment</h1>
+                    <p>
+                        Search/filter vacancies, director posts jobs, applicants apply and admin
+                        views reports.
+                    </p>
+                    <div style="display: flex; gap: 9px; flex-wrap: wrap; margin-top: 19px">
+                        <a class="button" href="#explore">Explore now</a
+                        ><a class="button ghost" href="#request">Make a request</a>
+                    </div>
+                </div>
+                <div class="hero-mark" aria-hidden="true">↗</div>
+            </section>
+            <div class="stats">
+                <div class="stat"><strong>86</strong><span>Open vacancies</span></div>
+                <div class="stat"><strong>24</strong><span>Companies</span></div>
+                <div class="stat"><strong>Daily</strong><span>New opportunities</span></div>
+            </div>
+            <section id="explore">
+                <div class="section-head">
+                    <div>
+                        <h2>Explore</h2>
+                        <p>Browse the available options and choose what you need.</p>
+                    </div>
+                </div>
+                <div class="search-row">
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search by name or details..."
+                        aria-label="Search"
+                    /><button type="button" class="ghost" id="clearSearch">Clear</button>
+                </div>
+                <div style="height: 14px"></div>
+                <div class="grid" id="recordGrid">
+                    <article
+                        class="card record"
+                        data-search="Frontend Developer Chennai · Full time"
+                    >
+                        <div class="visual">01</div>
+                        <div>
+                            <span class="badge">Career opportunities</span>
+                            <h3 style="margin-top: 8px">Frontend Developer</h3>
+                            <p>Chennai · Full time</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹4–6 LPA</span
+                            ><button
+                                type="button"
+                                class="select-item"
+                                data-item="Frontend Developer"
+                            >
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article
+                        class="card record"
+                        data-search="Junior Data Analyst Hybrid · Full time"
+                    >
+                        <div class="visual">02</div>
+                        <div>
+                            <span class="badge">Career opportunities</span>
+                            <h3 style="margin-top: 8px">Junior Data Analyst</h3>
+                            <p>Hybrid · Full time</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹3–5 LPA</span
+                            ><button
+                                type="button"
+                                class="select-item"
+                                data-item="Junior Data Analyst"
+                            >
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article class="card record" data-search="UI Designer Remote · Internship">
+                        <div class="visual">03</div>
+                        <div>
+                            <span class="badge">Career opportunities</span>
+                            <h3 style="margin-top: 8px">UI Designer</h3>
+                            <p>Remote · Internship</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹12,000 / month</span
+                            ><button type="button" class="select-item" data-item="UI Designer">
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article
+                        class="card record"
+                        data-search="Python Developer Bengaluru · Full time"
+                    >
+                        <div class="visual">04</div>
+                        <div>
+                            <span class="badge">Career opportunities</span>
+                            <h3 style="margin-top: 8px">Python Developer</h3>
+                            <p>Bengaluru · Full time</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹5–7 LPA</span
+                            ><button type="button" class="select-item" data-item="Python Developer">
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="two-col" style="margin-top: 22px">
+                <section class="panel" id="request">
+                    <div class="eyebrow">Get started</div>
+                    <h2>Apply for a vacancy</h2>
+                    <p class="muted">
+                        Complete the details below. Required fields are checked before submission.
+                    </p>
+                    <form id="mainForm">
+                        <div class="form-grid">
+                            <div class="">
+                                <label for="field0">Applicant name</label
+                                ><input
+                                    id="field0"
+                                    name="field0"
+                                    type="text"
+                                    placeholder="Enter applicant name"
+                                    required
+                                />
+                            </div>
+                            <div class="">
+                                <label for="field1">Email address</label
+                                ><input
+                                    id="field1"
+                                    name="field1"
+                                    type="email"
+                                    placeholder="name@example.com"
+                                    required
+                                />
+                            </div>
+                            <div class="">
+                                <label for="field2">Vacancy</label
+                                ><select id="field2" name="field2" required>
+                                    <option value="">Choose vacancy</option>
+                                    <option>Frontend Developer</option>
+                                    <option>Junior Data Analyst</option>
+                                    <option>UI Designer</option>
+                                    <option>Python Developer</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="field3">Resume link</label
+                                ><input
+                                    id="field3"
+                                    name="field3"
+                                    type="text"
+                                    placeholder="Enter resume link"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <button type="submit">Submit</button>
+                        <p id="formMessage" aria-live="polite"></p>
+                    </form>
+                </section>
+                <aside class="panel">
+                    <div class="eyebrow">Helpful information</div>
+                    <h2>How it works</h2>
+                    <ol class="muted">
+                        <li>Browse the available options.</li>
+                        <li>Select the item or service you need.</li>
+                        <li>Complete the form and submit.</li>
+                        <li>Review your recent activity.</li>
+                    </ol>
+                    <div class="notice">Your information is saved in this browser.</div>
+                </aside>
+            </div>
+            <section class="panel" id="activity">
+                <div class="section-head" style="margin-top: 0">
+                    <div>
+                        <h2>Recent activity</h2>
+                        <p>Your recent submissions on this device.</p>
+                    </div>
+                    <button type="button" class="ghost" id="clearRecords">Clear history</button>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Reference</th>
+                                <th>Details</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activityRows">
+                            <tr>
+                                <td colspan="4" class="muted">No activity yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="contact" class="panel" style="margin-top: 18px">
+                <div class="eyebrow">Need assistance?</div>
+                <h2>Contact and support</h2>
+                <p class="muted">For questions or assistance, use the request form above.</p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-inner">
+                <span>© 2026 JobConnect Recruitment</span
+                ><span>Designed for clear, simple service.</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

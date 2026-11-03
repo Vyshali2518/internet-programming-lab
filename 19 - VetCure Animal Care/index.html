@@ -1,1 +1,261 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Farmers submit animal symptoms, doctors review complaints and provide solutions, news and feedback."><title>VetCure Animal Care</title><link rel="stylesheet" href="style.css"></head><body class="listing-layout"><header class="site-header"><div class="header-inner"><a class="brand" href="#home"><span class="brand-mark">V</span>VetCure Animal Care</a><nav aria-label="Main navigation"><a href="#home">Home</a><a href="#explore">Explore</a><a href="#activity">My activity</a><a href="#contact">Contact</a></nav><a class="header-action" href="#request">Get started</a></div></header><main><section class="hero" id="home"><div><div class="eyebrow">Animal care</div><h1>VetCure Animal Care</h1><p>Farmers submit animal symptoms, doctors review complaints and provide solutions, news and feedback.</p><div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:19px"><a class="button" href="#explore">Explore now</a><a class="button ghost" href="#request">Make a request</a></div></div><div class="hero-mark" aria-hidden="true">♡</div></section><div class="stats"><div class="stat"><strong>12</strong><span>Veterinary doctors</span></div><div class="stat"><strong>04</strong><span>Care services</span></div><div class="stat"><strong>Online</strong><span>Consultation</span></div></div><section id="explore"><div class="section-head"><div><h2>Explore</h2><p>Browse the available options and choose what you need.</p></div></div><div class="search-row"><input id="searchInput" type="search" placeholder="Search by name or details..." aria-label="Search"><button type="button" class="ghost" id="clearSearch">Clear</button></div><div style="height:14px"></div><div class="grid" id="recordGrid"><article class="card record" data-search="Pet health consultation Video / image / text review"><div class="visual">01</div><div><span class="badge">Animal care</span><h3 style="margin-top:8px">Pet health consultation</h3><p>Video / image / text review</p></div><div class="bottom"><span class="price">₹250</span><button type="button" class="select-item" data-item="Pet health consultation">Select</button></div></article><article class="card record" data-search="Vaccination guidance Schedule and care advice"><div class="visual">02</div><div><span class="badge">Animal care</span><h3 style="margin-top:8px">Vaccination guidance</h3><p>Schedule and care advice</p></div><div class="bottom"><span class="price">₹150</span><button type="button" class="select-item" data-item="Vaccination guidance">Select</button></div></article><article class="card record" data-search="Animal nutrition Feeding and diet guidance"><div class="visual">03</div><div><span class="badge">Animal care</span><h3 style="margin-top:8px">Animal nutrition</h3><p>Feeding and diet guidance</p></div><div class="bottom"><span class="price">₹200</span><button type="button" class="select-item" data-item="Animal nutrition">Select</button></div></article><article class="card record" data-search="Emergency guidance Initial remote assessment"><div class="visual">04</div><div><span class="badge">Animal care</span><h3 style="margin-top:8px">Emergency guidance</h3><p>Initial remote assessment</p></div><div class="bottom"><span class="price">₹300</span><button type="button" class="select-item" data-item="Emergency guidance">Select</button></div></article></div></section><div class="two-col" style="margin-top:22px"><section class="panel" id="request"><div class="eyebrow">Get started</div><h2>Send a health request</h2><p class="muted">Complete the details below. Required fields are checked before submission.</p><form id="mainForm"><div class="form-grid"><div class=""><label for="field0">Farmer name</label><input id="field0" name="field0" type="text" placeholder="Enter farmer name" required></div><div class=""><label for="field1">Animal type</label><select id="field1" name="field1" required><option value="">Choose animal type</option><option>Cow</option><option>Buffalo</option><option>Dog</option><option>Goat</option><option>Other</option></select></div><div class=""><label for="field2">Symptoms</label><textarea id="field2" name="field2" placeholder="Enter symptoms" required></textarea></div><div class=""><label for="field3">Preferred doctor</label><select id="field3" name="field3" required><option value="">Choose preferred doctor</option><option>Any available</option><option>Dr. Meera Rao</option><option>Dr. Arjun Kumar</option></select></div><div class="wide"><label for="field4">Contact number</label><input id="field4" name="field4" type="tel" placeholder="Enter contact number" required></div></div><button type="submit">Submit</button><p id="formMessage" aria-live="polite"></p></form></section><aside class="panel"><div class="eyebrow">Helpful information</div><h2>How it works</h2><ol class="muted"><li>Browse the available options.</li><li>Select the item or service you need.</li><li>Complete the form and submit.</li><li>Review your recent activity.</li></ol><div class="notice">Your information is saved in this browser.</div></aside></div><section class="panel" id="activity"><div class="section-head" style="margin-top:0"><div><h2>Recent activity</h2><p>Your recent submissions on this device.</p></div><button type="button" class="ghost" id="clearRecords">Clear history</button></div><div class="table-wrap"><table><thead><tr><th>Reference</th><th>Details</th><th>Date</th><th>Status</th></tr></thead><tbody id="activityRows"><tr><td colspan="4" class="muted">No activity yet.</td></tr></tbody></table></div></section><section id="contact" class="panel" style="margin-top:18px"><div class="eyebrow">Need assistance?</div><h2>Contact and support</h2><p class="muted">For questions or assistance, use the request form above.</p></section></main><footer><div class="footer-inner"><span>© 2026 VetCure Animal Care</span><span>Designed for clear, simple service.</span></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Farmers submit animal symptoms, doctors review complaints and provide solutions, news and feedback."
+        />
+        <title>VetCure Animal Care</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="listing-layout">
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="#home"
+                    ><span class="brand-mark">V</span>VetCure Animal Care</a
+                >
+                <nav aria-label="Main navigation">
+                    <a href="#home">Home</a><a href="#explore">Explore</a
+                    ><a href="#activity">My activity</a><a href="#contact">Contact</a>
+                </nav>
+                <a class="header-action" href="#request">Get started</a>
+            </div>
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <div>
+                    <div class="eyebrow">Animal care</div>
+                    <h1>VetCure Animal Care</h1>
+                    <p>
+                        Farmers submit animal symptoms, doctors review complaints and provide
+                        solutions, news and feedback.
+                    </p>
+                    <div style="display: flex; gap: 9px; flex-wrap: wrap; margin-top: 19px">
+                        <a class="button" href="#explore">Explore now</a
+                        ><a class="button ghost" href="#request">Make a request</a>
+                    </div>
+                </div>
+                <div class="hero-mark" aria-hidden="true">♡</div>
+            </section>
+            <div class="stats">
+                <div class="stat"><strong>12</strong><span>Veterinary doctors</span></div>
+                <div class="stat"><strong>04</strong><span>Care services</span></div>
+                <div class="stat"><strong>Online</strong><span>Consultation</span></div>
+            </div>
+            <section id="explore">
+                <div class="section-head">
+                    <div>
+                        <h2>Explore</h2>
+                        <p>Browse the available options and choose what you need.</p>
+                    </div>
+                </div>
+                <div class="search-row">
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search by name or details..."
+                        aria-label="Search"
+                    /><button type="button" class="ghost" id="clearSearch">Clear</button>
+                </div>
+                <div style="height: 14px"></div>
+                <div class="grid" id="recordGrid">
+                    <article
+                        class="card record"
+                        data-search="Pet health consultation Video / image / text review"
+                    >
+                        <div class="visual">01</div>
+                        <div>
+                            <span class="badge">Animal care</span>
+                            <h3 style="margin-top: 8px">Pet health consultation</h3>
+                            <p>Video / image / text review</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹250</span
+                            ><button
+                                type="button"
+                                class="select-item"
+                                data-item="Pet health consultation"
+                            >
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article
+                        class="card record"
+                        data-search="Vaccination guidance Schedule and care advice"
+                    >
+                        <div class="visual">02</div>
+                        <div>
+                            <span class="badge">Animal care</span>
+                            <h3 style="margin-top: 8px">Vaccination guidance</h3>
+                            <p>Schedule and care advice</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹150</span
+                            ><button
+                                type="button"
+                                class="select-item"
+                                data-item="Vaccination guidance"
+                            >
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article
+                        class="card record"
+                        data-search="Animal nutrition Feeding and diet guidance"
+                    >
+                        <div class="visual">03</div>
+                        <div>
+                            <span class="badge">Animal care</span>
+                            <h3 style="margin-top: 8px">Animal nutrition</h3>
+                            <p>Feeding and diet guidance</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹200</span
+                            ><button type="button" class="select-item" data-item="Animal nutrition">
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                    <article
+                        class="card record"
+                        data-search="Emergency guidance Initial remote assessment"
+                    >
+                        <div class="visual">04</div>
+                        <div>
+                            <span class="badge">Animal care</span>
+                            <h3 style="margin-top: 8px">Emergency guidance</h3>
+                            <p>Initial remote assessment</p>
+                        </div>
+                        <div class="bottom">
+                            <span class="price">₹300</span
+                            ><button
+                                type="button"
+                                class="select-item"
+                                data-item="Emergency guidance"
+                            >
+                                Select
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="two-col" style="margin-top: 22px">
+                <section class="panel" id="request">
+                    <div class="eyebrow">Get started</div>
+                    <h2>Send a health request</h2>
+                    <p class="muted">
+                        Complete the details below. Required fields are checked before submission.
+                    </p>
+                    <form id="mainForm">
+                        <div class="form-grid">
+                            <div class="">
+                                <label for="field0">Farmer name</label
+                                ><input
+                                    id="field0"
+                                    name="field0"
+                                    type="text"
+                                    placeholder="Enter farmer name"
+                                    required
+                                />
+                            </div>
+                            <div class="">
+                                <label for="field1">Animal type</label
+                                ><select id="field1" name="field1" required>
+                                    <option value="">Choose animal type</option>
+                                    <option>Cow</option>
+                                    <option>Buffalo</option>
+                                    <option>Dog</option>
+                                    <option>Goat</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="field2">Symptoms</label
+                                ><textarea
+                                    id="field2"
+                                    name="field2"
+                                    placeholder="Enter symptoms"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="">
+                                <label for="field3">Preferred doctor</label
+                                ><select id="field3" name="field3" required>
+                                    <option value="">Choose preferred doctor</option>
+                                    <option>Any available</option>
+                                    <option>Dr. Meera Rao</option>
+                                    <option>Dr. Arjun Kumar</option>
+                                </select>
+                            </div>
+                            <div class="wide">
+                                <label for="field4">Contact number</label
+                                ><input
+                                    id="field4"
+                                    name="field4"
+                                    type="tel"
+                                    placeholder="Enter contact number"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <button type="submit">Submit</button>
+                        <p id="formMessage" aria-live="polite"></p>
+                    </form>
+                </section>
+                <aside class="panel">
+                    <div class="eyebrow">Helpful information</div>
+                    <h2>How it works</h2>
+                    <ol class="muted">
+                        <li>Browse the available options.</li>
+                        <li>Select the item or service you need.</li>
+                        <li>Complete the form and submit.</li>
+                        <li>Review your recent activity.</li>
+                    </ol>
+                    <div class="notice">Your information is saved in this browser.</div>
+                </aside>
+            </div>
+            <section class="panel" id="activity">
+                <div class="section-head" style="margin-top: 0">
+                    <div>
+                        <h2>Recent activity</h2>
+                        <p>Your recent submissions on this device.</p>
+                    </div>
+                    <button type="button" class="ghost" id="clearRecords">Clear history</button>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Reference</th>
+                                <th>Details</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activityRows">
+                            <tr>
+                                <td colspan="4" class="muted">No activity yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="contact" class="panel" style="margin-top: 18px">
+                <div class="eyebrow">Need assistance?</div>
+                <h2>Contact and support</h2>
+                <p class="muted">For questions or assistance, use the request form above.</p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-inner">
+                <span>© 2026 VetCure Animal Care</span
+                ><span>Designed for clear, simple service.</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
